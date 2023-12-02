@@ -1,7 +1,7 @@
 package fr.xibalba.adventOfCode2023
 
-import fr.xibalba.adventOfCode2023.problems.DayOne
+import fr.xibalba.adventOfCode2023.problems.DayTwo
 
 fun main() {
-    println(DayOne.solvePartTwo())
+    println(DayTwo.solvePartTwo())
 }
