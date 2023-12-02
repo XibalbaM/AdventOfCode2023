@@ -2,10 +2,10 @@ package fr.xibalba.adventOfCode2023.problems
 
 import java.io.File
 
-object DayOne : Problem {
+object DayOne : Problem(1) {
 
     override fun solvePartOne(): Any {
-        val data = File("src/main/resources/1.txt").readLines()
+        val data = getInput().readLines()
         val numbers = data.map { it.first { char -> char.isDigit() } + "" + it.last { char -> char.isDigit() } }
         return numbers.sumOf { it.toInt() }
     }
@@ -22,7 +22,7 @@ object DayOne : Problem {
             "eight" to "8",
             "nine" to "9"
         )
-        val data = File("src/main/resources/1.txt").readLines()
+        val data = getInput().readLines()
         val firstData = data.map { it.replaceMapFirst(digitMap) }
         val lastData = data.map { it.replaceMapLast(digitMap) }
         val numbers = List(data.size) { index -> firstData[index].first { char -> char.isDigit() } + "" + lastData[index].last { char -> char.isDigit() } }
