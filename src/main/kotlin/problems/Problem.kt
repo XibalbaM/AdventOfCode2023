@@ -8,8 +8,8 @@ abstract class Problem(private val day: Int) {
 
     abstract fun solvePartTwo(): Any
 
-    fun getInput(): File {
-        return File("src/main/resources/input/$day.txt")
+    fun getInput(): String {
+        return File("src/main/resources/input/$day.txt").readText()
     }
 
     fun getLink(): String {

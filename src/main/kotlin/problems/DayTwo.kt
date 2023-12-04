@@ -2,14 +2,14 @@ package fr.xibalba.adventOfCode2023.problems
 
 object DayTwo : Problem(2) {
     override fun solvePartOne(): Any {
-        val input = getInput().readLines()
+        val input = getInput().split("\n")
         val games = input.map { Game.fromString(it) }
         val possibleGames = games.filter { it.maxDrawnValues().eachColorUnder(Draw(12, 13, 14)) }
         return possibleGames.sumOf { it.id }
     }
 
     override fun solvePartTwo(): Any {
-        val input = getInput().readLines()
+        val input = getInput().split("\n")
         val games = input.map { Game.fromString(it) }
         val powers = games.map { it.maxDrawnValues().power() }
         return powers.sum()
