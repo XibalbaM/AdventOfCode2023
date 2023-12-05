@@ -2,7 +2,7 @@ package fr.xibalba.adventOfCode2023.problems
 
 import java.io.File
 
-abstract class Problem(private val day: Int) {
+abstract class Problem(val day: Int) {
 
     abstract fun solvePartOne(): Any
 
