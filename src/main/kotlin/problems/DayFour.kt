@@ -1,6 +1,6 @@
 package fr.xibalba.adventOfCode2023.problems
 
-import fr.xibalba.adventOfCode2023.exclude
+import fr.xibalba.adventOfCode2023.utils.exclude
 import kotlin.math.pow
 
 object DayFour : Problem(4) {
