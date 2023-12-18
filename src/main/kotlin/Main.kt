@@ -1,9 +1,9 @@
 package fr.xibalba.adventOfCode2023
 
-import fr.xibalba.adventOfCode2023.problems.DayEleven
+import fr.xibalba.adventOfCode2023.problems.DayTwelve
 
 fun main() {
-    val problem = DayEleven
+    val problem = DayTwelve
     println("Day ${problem.day} - ${problem.getLink()}")
     println("Part one: ${problem.solvePartOne()}")
     println("Part two: ${problem.solvePartTwo()}")
